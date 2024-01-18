@@ -34,6 +34,7 @@ const getToken = async () => {
 export default async function () {
     console.log("ac: ", testConfig)
     const token = await getToken();
+    console.log("token: ", token)
     const requestOptions = {
         method: 'POST',
         headers: {
