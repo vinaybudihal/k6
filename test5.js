@@ -8,6 +8,10 @@ const discoverIssuer = async (issuerUrl) => {
     return http.get(url).json();
 };
 
+export const options = {
+  vus: 10000,
+  duration: '240s'
+};
 const getToken = async () => {
     const issuerDetails = await discoverIssuer(testConfig.OAUTH_ISSUER);
     const tokenUrl = issuerDetails.token_endpoint;
@@ -24,8 +28,7 @@ const getToken = async () => {
     let headers = { 'Content-Type': 'application/x-www-form-urlencoded' };
     return http.post(tokenUrl, body, { headers: headers }).json().access_token
   };
-
-  
+ 
 
 export default async function () {
     console.log("ac: ", testConfig)
