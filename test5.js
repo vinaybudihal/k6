@@ -1,7 +1,7 @@
 import http from 'k6/http';
 import { check, sleep } from 'k6';
 
-const testConfig = JSON.parse(open('./test-config.json'));
+const testConfig = JSON.parse(open('./config.json'));
 
 const discoverIssuer = async (issuerUrl) => {
     const url = issuerUrl + '/.well-known/openid-configuration';
