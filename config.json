@@ -1,0 +1,6 @@
+{
+    "OAUTH_CLIENT_ID": "7a62f4630c334a37b6d4ee7b23c313a9",
+    "OAUTH_CLIENT_SECRET": "c6916e02-1844-424e-bce8-239014e99e0c",
+    "OAUTH_ISSUER": "https://idcs-3f107dc95f6c4801bcb677998d1b1f97.identity.oraclecloud.com:443",
+    "OAUTH_SCOPES": "gridall gridadmin"
+}
