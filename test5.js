@@ -12,6 +12,7 @@ export const options = {
   vus: 10000,
   duration: '240s'
 };
+
 const getToken = async () => {
     const issuerDetails = await discoverIssuer(testConfig.OAUTH_ISSUER);
     const tokenUrl = issuerDetails.token_endpoint;
